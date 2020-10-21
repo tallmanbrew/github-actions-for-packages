@@ -4,10 +4,8 @@
 name: Node.js Package
 
 on:
-  workflow_dispatch:
-    inputs:
-      tags:
-        release_version: '1.0.0'
+  push:
+    branches: [ master ]
 
 jobs:
   build:
