@@ -2,10 +2,14 @@
   "name": "tallman-test-actions-template",
   "version": "1.0.0",
   "description": "Learn how to use GitHub Actions!",
+  "repository": "git://github.com/tallmanbrew/github-actions-for-packages.git",
   "main": "index.js",
   "directories": {
     "test": "__test__",
     "src": "src"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "npx webpack --config ./src/webpack.config.js --mode production",
